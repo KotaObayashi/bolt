@@ -1,9 +1,4 @@
 @charset "UTF-8";
-.inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 1100px;
-}
 
 .header {
   background-color: white;
@@ -26,9 +21,10 @@
   padding: 14px 12px;
   position: absolute;
   left: 1200px;
+  text-decoration: none;
 }
 
-.header-inner a:hover {
+.contact:hover {
   color: #333;
   transition: 0.3s;
 }
@@ -41,18 +37,23 @@
 
 .theme {
   background-color: #f2f2f2;
+  padding: 250px 0;
+}
+
+.theme-inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
 }
 
 .theme-inner h1 {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  padding-top: 250px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .theme-inner h2 {
-  padding-bottom: 250px;
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -60,13 +61,13 @@
 .intro {
   background-color: #74cfae;
   padding-top: 50px;
+  padding-left: 300px;
   color: white;
   position: relative;
-  width: 100%;
 }
 
-.intro-img {
-  margin-left: -50%;
+.intro-inner {
+  text-align: center;
 }
 
 .intro h2,.intro p {
@@ -95,6 +96,12 @@
   color: #333;
 }
 
+.article-inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
+}
+
 .article h2 {
   font-size: 24px;
   margin-bottom: -40px;
@@ -118,7 +125,7 @@
 .article p {
   display: inline-block;
   line-height: 20px;
-  padding: 90px 90px 0 0;
+  margin: 90px 90px 0 0;
 }
 
 .email {
@@ -126,6 +133,7 @@
   color: white;
   font-size: 12px;
   padding: 14px 20px;
+  text-decoration: none;
 }
 
 .email:hover {
@@ -141,6 +149,11 @@
   width: 100%;
 }
 
+.skills-inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
+}
 .skills h2 {
   font-size: 24px;
 }
@@ -168,15 +181,22 @@
   color: #74cfae;
   font-size: 2em;
   padding: 200px 0;
-  width: 100%;
 }
 
-.sns i {
+.sns-inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
+}
+
+.sns-link {
+  color: #74cfae;
   width: 185px;
   padding: 50px 0;
+  text-decoration: none;
 }
 
-.sns i:hover {
+.sns-link:hover {
   background-color: white;
   transition: 0.3s;
 }
@@ -191,5 +211,5 @@
 
 .footer-text {
   position: absolute;
-  left: 600px;
+  left: 1000px;
 }
