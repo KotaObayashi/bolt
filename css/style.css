@@ -10,6 +10,12 @@
   z-index: 100;
 }
 
+.inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px; 
+}
+
 .header-inner {
   padding: 15px 0;
 }
@@ -17,10 +23,9 @@
 .contact {
   background-color: #74cfae;
   color: white;
+  float: right;
   font-size: 12px;
   padding: 14px 12px;
-  position: absolute;
-  left: 1200px;
   text-decoration: none;
 }
 
@@ -31,8 +36,7 @@
 
 .header-inner i {
   font-size: 2em;
-  position: absolute;
-  left: 200px;
+  float: left;
 }
 
 .theme {
@@ -40,22 +44,16 @@
   padding: 250px 0;
 }
 
-.theme-inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 1100px;
-}
-
 .theme-inner h1 {
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .theme-inner h2 {
   font-size: 30px;
   color: #c0c0c0;
+  margin-top: 20px;
 }
 
 .intro {
@@ -63,30 +61,26 @@
   padding-top: 50px;
   padding-left: 300px;
   color: white;
-  position: relative;
-}
-
-.intro-inner {
-  text-align: center;
-}
-
-.intro h2,.intro p {
-  position: absolute;
 }
 
 .intro h2 {
   font-size: 24px;
-  margin-bottom: 35px;
-  top: 50px;
-  left: 58%;
 }
 
 .intro p {
   font-size: 20px;
   line-height: 30px;
-  width: 50%;
-  top: 109px;
-  left: 40%;
+  margin-top: 35px;
+}
+
+.phone-img {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .article {
@@ -96,25 +90,26 @@
   color: #333;
 }
 
-.article-inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 1100px;
-}
-
 .article h2 {
   font-size: 24px;
-  margin-bottom: -40px;
+}
+
+.article-images {
+  margin-top: 40px;
 }
 
 .article-images img {
-  margin-right: 100px;
+  margin-left: 100px;
   margin-top: 80px;
   opacity: 0.7;
 }
 
-.article-images img:nth-child(3n) {
-  margin-right: -30px;
+.article-images img:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.article-images img:nth-child(3n+1) {
+  margin-left: 0;
 }
 
 .article-images img:hover {
@@ -122,8 +117,11 @@
   transition: 0.3s;
 }
 
-.article p {
+.article p,.email {
   display: inline-block;
+}
+
+.article p {
   line-height: 20px;
   margin: 90px 90px 0 0;
 }
@@ -149,14 +147,10 @@
   width: 100%;
 }
 
-.skills-inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 1100px;
-}
 .skills h2 {
   font-size: 24px;
 }
+
 .skill {
   display: flex;
   justify-content: center;
@@ -164,11 +158,11 @@
 }
 
 .skill-item {
-  margin-right: 180px;
+  margin-left: 180px;
 }
 
-.skill-item:last-child {
-  margin-right: 0;
+.skill-item:first-child {
+  margin-left: 0;
 }
 
 .skill-item p {
@@ -181,12 +175,6 @@
   color: #74cfae;
   font-size: 2em;
   padding: 200px 0;
-}
-
-.sns-inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 1100px;
 }
 
 .sns-link {
@@ -206,10 +194,8 @@
   color: white;
   padding-top: 20px;
   padding-bottom: 25px;
-  position: relative;
 }
 
 .footer-text {
-  position: absolute;
-  left: 1000px;
+  float: right;
 }
