@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "bolt-font";
-  src: url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-  src:url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+body {
+  font-family: "Lato";
 }
 
-body {
-  font-family: "bolt-font";
+body h2 {
+  font-size: 24px;
+  font-family: "Raleway";
 }
 
 .header {
@@ -17,6 +16,10 @@ body {
   top: 0;
   width: 100%;
   z-index: 100;
+}
+
+.main {
+  padding-top: 70px;
 }
 
 .inner {
@@ -51,6 +54,7 @@ body {
 .theme {
   background-color: #f2f2f2;
   padding: 250px 0;
+  font-family: "Raleway";
 }
 
 .theme-inner h1 {
@@ -71,19 +75,19 @@ body {
   color: white;
 }
 
-.intro h2 {
-  font-size: 24px;
-}
-
 .intro p {
   font-size: 20px;
   line-height: 30px;
   margin-top: 35px;
 }
 
+.intro-contents {
+  float: right;
+}
+
 .phone-img {
   float: left;
-  padding: 0 100px 0 100px;
+  padding-left: 50px;
 }
 
 .clearfix::after {
@@ -92,60 +96,62 @@ body {
   clear: both;
 }
 
-.article {
+.work {
   padding-top: 60px;
   padding-bottom: 70px;
   background-color: #f2f2f2;
   color: #333;
 }
 
-.article h2 {
-  font-size: 24px;
-}
-
-.article-images {
+.work-images {
   margin-top: 40px;
 }
 
-.article-images img {
+.work-images a {
+  display: inline-block;
   margin-left: 100px;
   margin-top: 80px;
   opacity: 0.7;
   transition: 0.3s;
 }
 
-.article-images img:nth-child(-n+3) {
+.work-images a:nth-child(-n+3) {
   margin-top: 0;
 }
 
-.article-images img:nth-child(3n+1) {
+.work-images a:nth-child(3n+1) {
   margin-left: 0;
 }
 
-.article-images img:hover {
+.work-images a:hover {
   opacity: 1;
 }
 
-.article p,.email {
+.work p,.email {
   display: inline-block;
 }
 
-.article p {
+.work-contents {
+  margin-top: 90px;
+}
+
+.work p {
   line-height: 20px;
-  margin: 90px 90px 0 0;
 }
 
 .email {
   background-color: #74cfae;
   color: white;
   font-size: 12px;
+  margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
+  transition: 0.3s;
+  vertical-align: top;
 }
 
 .email:hover {
   color: #333;
-  transition: 0.3s;
 }
 
 .skills {
@@ -156,9 +162,6 @@ body {
   width: 100%;
 }
 
-.skills h2 {
-  font-size: 24px;
-}
 
 .skill {
   display: flex;
