@@ -9,14 +9,23 @@ body h2 {
   font-family: "Raleway";
 }
 
-.header {
-  background-color: white;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 100;
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
+
+@media screen and (min-width:1200px) {
+
+  .header {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 15px 0;
+  }
 
 .main {
   padding-top: 70px;
@@ -28,10 +37,6 @@ body h2 {
   width: 1100px; 
 }
 
-.header-inner {
-  padding: 15px 0;
-}
-
 .contact {
   background-color: #74cfae;
   color: white;
@@ -39,16 +44,19 @@ body h2 {
   font-size: 12px;
   padding: 14px 12px;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .contact:hover {
   color: #333;
 }
 
-.header-inner i {
+.bolt-icon {
   font-size: 2em;
   float: left;
+}
+
+.barger-icon {
+  display: none;
 }
 
 .theme {
@@ -88,12 +96,6 @@ body h2 {
 .phone-img {
   float: left;
   padding-left: 50px;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .work {
@@ -146,7 +148,6 @@ body h2 {
   margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
-  transition: 0.3s;
   vertical-align: top;
 }
 
@@ -161,7 +162,6 @@ body h2 {
   padding-bottom: 100px;
   width: 100%;
 }
-
 
 .skill {
   display: flex;
@@ -211,3 +211,383 @@ body h2 {
 .footer-text {
   text-align: right;
 }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+.header {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 0;
+}
+
+.inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.bolt-icon {
+  float: left;
+  font-size: 2em;
+}
+
+.barger-icon {
+  display: none;
+}
+
+.contact {
+  background-color: #74cfae;
+  color: white;
+  float: right;
+  font-size: 12px;
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+.theme {
+  background-color: #f2f2f2;
+  padding: 250px 0;
+  font-family: "Raleway";
+}
+
+.theme-inner h1 {
+  color: #74cfae;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.theme-inner p {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+.intro {
+  background-color: #74cfae;
+  padding: 50px 0 25px 0;
+  color: white;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+.intro-contents {
+  margin-top: 20px;
+}
+
+.work {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.work-images {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-images a {
+  opacity: 0.7;
+}
+
+.work-images a:nth-child(4n) {
+  margin-top: 80px;
+}
+
+.work-contents {
+  margin-top: 80px;
+}
+
+.email {
+  display: inline-block;
+  background-color: #74cfae;
+  color: white;
+  font-size: 12px;
+  margin-top: 40px;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.skills {
+  background-color: #4e4e4e;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.skill {
+  margin-top: 70px;
+}
+
+.skill-item {
+  margin-top: 88px;
+}
+
+.skill-item:first-child {
+  margin-top: 0;
+}
+
+.skill-item p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.sns {
+  background-color: #f2f2f2;
+  color: #74cfae;
+  font-size: 2em;
+  padding: 200px 0;
+}
+
+.sns-link {
+  color: #74cfae;
+  width: 20%;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #74cfae;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer-text {
+  text-align: right;
+}
+
+.brank {
+  display: none;
+}
+
+}
+
+@media screen and (max-width:767px) {
+
+.header {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 0;
+}
+
+.inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 97%;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.bolt-icon {
+  float: left;
+  font-size: 3em;
+}
+
+.barger-icon {
+  color: #ddd;
+  float: right;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact {
+  display: none;
+}
+
+.theme {
+  background-color: #f2f2f2;
+  padding: 160px 0 130px 0;
+  font-family: "Raleway";
+}
+
+.theme-inner h1 {
+  color: #74cfae;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.theme-inner p {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+.intro {
+  background-color: #74cfae;
+  padding: 50px 0 25px 0;
+  color: white;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 35px;
+}
+
+.intro-inner {
+  width: 100%;
+}
+
+.intro-contents {
+  margin-top: 20px;
+}
+
+.work {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.work-images {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-images a:nth-child(4n) {
+  margin-top: 80px;
+}
+
+.work-contents {
+  margin-top: 80px;
+}
+
+.email {
+  display: inline-block;
+  background-color: #74cfae;
+  color: white;
+  font-size: 12px;
+  margin-top: 40px;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.work {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.work-images {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-images img {
+  width: 100%;
+}
+
+.work-images a:nth-child(4n) {
+  margin-top: 80px;
+}
+
+.work-images a {
+  opacity: 0.7;
+}
+
+.work-contents {
+  margin-top: 80px;
+}
+
+.email {
+  display: inline-block;
+  background-color: #74cfae;
+  color: white;
+  font-size: 12px;
+  margin-top: 40px;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.skills {
+  background-color: #4e4e4e;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.skill {
+  margin-top: 70px;
+}
+
+.skill-item {
+  margin-top: 88px;
+}
+
+.skill-item:first-child {
+  margin-top: 0;
+}
+
+.skill-item p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.sns {
+  background-color: #f2f2f2;
+  color: #74cfae;
+  font-size: 2em;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sns-link {
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+  color: #74cfae;
+  text-decoration: none;
+  padding: 50px 0;
+}
+
+.sns-link:hover {
+  background-color: white;
+}
+
+.footer {
+  background-color: #74cfae;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer-text {
+  text-align: right;
+}
+
+.brank {
+  display: none;
+}
+
+}
+
