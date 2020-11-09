@@ -55,7 +55,7 @@ body h2 {
   float: left;
 }
 
-.barger-icon {
+.burger-icon {
   display: none;
 }
 
@@ -91,6 +91,7 @@ body h2 {
 
 .intro-contents {
   float: right;
+  width: 700px;
 }
 
 .phone-img {
@@ -231,8 +232,8 @@ body h2 {
   width: 90%;
 }
 
-.header {
-  padding: 15px 0;
+.main {
+  padding-top: 70px;
 }
 
 .bolt-icon {
@@ -240,7 +241,7 @@ body h2 {
   font-size: 2em;
 }
 
-.barger-icon {
+.burger-icon {
   display: none;
 }
 
@@ -301,6 +302,10 @@ body h2 {
   align-items: center;
 }
 
+.work-images img {
+  vertical-align: bottom;
+}
+
 .work-images a {
   opacity: 0.7;
 }
@@ -358,6 +363,7 @@ body h2 {
   color: #74cfae;
   width: 20%;
   text-decoration: none;
+  padding: 50px 0;
 }
 
 .footer {
@@ -370,11 +376,6 @@ body h2 {
 .footer-text {
   text-align: right;
 }
-
-.brank {
-  display: none;
-}
-
 }
 
 @media screen and (max-width:767px) {
@@ -389,14 +390,14 @@ body h2 {
   padding: 15px 0;
 }
 
+.main {
+  padding-top: 70px;
+}
+
 .inner {
   margin: 0 auto;
   text-align: center;
   width: 97%;
-}
-
-.header {
-  padding: 15px 0;
 }
 
 .bolt-icon {
@@ -404,7 +405,7 @@ body h2 {
   font-size: 3em;
 }
 
-.barger-icon {
+.burger-icon {
   color: #ddd;
   float: right;
   font-size: 2em;
@@ -467,6 +468,10 @@ body h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.work-images img {
+  vertical-align: bottom;
 }
 
 .work-images a:nth-child(4n) {
@@ -583,10 +588,6 @@ body h2 {
 
 .footer-text {
   text-align: right;
-}
-
-.brank {
-  display: none;
 }
 
 }
