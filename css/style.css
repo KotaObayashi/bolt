@@ -15,26 +15,37 @@ body h2 {
   clear: both;
 }
 
-@media screen and (min-width:1200px) {
+.inner {
+  margin: 0 auto;
+  text-align: center;
+  width: 1100px;
+}
 
-  .header {
-    background-color: white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    padding: 15px 0;
-  }
+li {
+  display: inline-block;
+}
+
+.header {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 0;
+}
 
 .main {
   padding-top: 70px;
 }
 
-.inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 1100px; 
+.bolt-icon {
+  float: left;
+  font-size: 2em;
+}
+
+.burger-icon {
+  display: none;
 }
 
 .contact {
@@ -48,15 +59,6 @@ body h2 {
 
 .contact:hover {
   color: #333;
-}
-
-.bolt-icon {
-  font-size: 2em;
-  float: left;
-}
-
-.burger-icon {
-  display: none;
 }
 
 .theme {
@@ -89,16 +91,6 @@ body h2 {
   margin-top: 35px;
 }
 
-.intro-contents {
-  float: right;
-  width: 700px;
-}
-
-.phone-img {
-  float: left;
-  padding-left: 50px;
-}
-
 .work {
   padding-top: 60px;
   padding-bottom: 70px;
@@ -111,45 +103,20 @@ body h2 {
 }
 
 .work-images a {
-  display: inline-block;
-  margin-left: 100px;
-  margin-top: 80px;
   opacity: 0.7;
-  transition: 0.3s;
-}
-
-.work-images a:nth-child(-n+3) {
-  margin-top: 0;
-}
-
-.work-images a:nth-child(3n+1) {
-  margin-left: 0;
 }
 
 .work-images a:hover {
   opacity: 1;
 }
 
-.work p,.email {
-  display: inline-block;
-}
-
-.work-contents {
-  margin-top: 90px;
-}
-
-.work p {
-  line-height: 20px;
-}
-
 .email {
+  display: inline-block;
   background-color: #74cfae;
   color: white;
   font-size: 12px;
-  margin-left: 90px;
   padding: 14px 20px;
   text-decoration: none;
-  vertical-align: top;
 }
 
 .email:hover {
@@ -161,21 +128,10 @@ body h2 {
   color: white;
   padding-top: 70px;
   padding-bottom: 100px;
-  width: 100%;
 }
 
 .skill {
-  display: flex;
-  justify-content: center;
   margin-top: 70px;
-}
-
-.skill-item {
-  margin-left: 180px;
-}
-
-.skill-item:first-child {
-  margin-left: 0;
 }
 
 .skill-item p {
@@ -212,91 +168,76 @@ body h2 {
 .footer-text {
   text-align: right;
 }
+
+@media screen and (min-width: 1200px) {
+
+.intro-contents {
+  float: right;
+  width: 700px;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
-
-.header {
-  background-color: white;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  padding: 15px 0;
+.phone-img {
+  float: left;
+  padding-left: 50px;
 }
+
+.work-images li {
+  margin-left: 100px;
+  margin-top: 80px;
+  transition: 0.3s;
+}
+
+.work-images li:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.work-images li:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.work p {
+  display: inline-block;
+  line-height: 20px;
+  width: 500px;
+}
+
+.email {
+  margin-left: 90px;
+  vertical-align: top;
+}
+
+.work-contents {
+  margin-top: 90px;
+}
+
+.skill {
+  display: flex;
+}
+
+.skill-item {
+  margin-left: 180px;
+}
+
+.skill-item:first-child {
+  margin-left: 0;
+}
+}
+
+@media screen and (max-width: 1199px) {
 
 .inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 90%;
-}
-
-.main {
-  padding-top: 70px;
-}
-
-.bolt-icon {
-  float: left;
-  font-size: 2em;
-}
-
-.burger-icon {
-  display: none;
-}
-
-.contact {
-  background-color: #74cfae;
-  color: white;
-  float: right;
-  font-size: 12px;
-  padding: 14px 12px;
-  text-decoration: none;
-}
-
-.theme {
-  background-color: #f2f2f2;
-  padding: 250px 0;
-  font-family: "Raleway";
-}
-
-.theme-inner h1 {
-  color: #74cfae;
-  font-size: 90px;
-  font-weight: 700;
-}
-
-.theme-inner p {
-  font-size: 30px;
-  color: #c0c0c0;
-  margin-top: 20px;
+  width: 97%;
 }
 
 .intro {
-  background-color: #74cfae;
   padding: 50px 0 25px 0;
-  color: white;
-}
-
-.intro p {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 35px;
 }
 
 .intro-contents {
   margin-top: 20px;
 }
 
-.work {
-  padding-top: 60px;
-  padding-bottom: 70px;
-  background-color: #f2f2f2;
-  color: #333;
-}
-
 .work-images {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,12 +247,12 @@ body h2 {
   vertical-align: bottom;
 }
 
-.work-images a {
-  opacity: 0.7;
+.work-images li:nth-child(3n+1) {
+  margin-top: 80px;
 }
 
-.work-images a:nth-child(4n) {
-  margin-top: 80px;
+.work-images li:first-child {
+  margin-top: 0;
 }
 
 .work-contents {
@@ -319,94 +260,28 @@ body h2 {
 }
 
 .email {
-  display: inline-block;
-  background-color: #74cfae;
-  color: white;
-  font-size: 12px;
   margin-top: 40px;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-.skills {
-  background-color: #4e4e4e;
-  color: white;
-  padding-top: 70px;
-  padding-bottom: 100px;
-}
-
-.skill {
-  margin-top: 70px;
 }
 
 .skill-item {
   margin-top: 88px;
+  display: block;
 }
 
 .skill-item:first-child {
   margin-top: 0;
 }
-
-.skill-item p {
-  font-size: 16px;
-  margin-top: 20px;
 }
 
-.sns {
-  background-color: #f2f2f2;
-  color: #74cfae;
-  font-size: 2em;
-  padding: 200px 0;
-}
-
-.sns-link {
-  color: #74cfae;
-  width: 20%;
-  text-decoration: none;
-  padding: 50px 0;
-}
-
-.footer {
-  background-color: #74cfae;
-  color: white;
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-
-.footer-text {
-  text-align: right;
-}
-}
-
-@media screen and (max-width:767px) {
-
-.header {
-  background-color: white;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  padding: 15px 0;
-}
-
-.main {
-  padding-top: 70px;
-}
-
-.inner {
-  margin: 0 auto;
-  text-align: center;
-  width: 97%;
-}
+@media screen and (max-width: 767px) {
 
 .bolt-icon {
-  float: left;
   font-size: 3em;
 }
 
 .burger-icon {
   color: #ddd;
+  display: block;
   float: right;
   font-size: 2em;
   padding: 10px;
@@ -418,177 +293,21 @@ body h2 {
   display: none;
 }
 
-.theme {
-  background-color: #f2f2f2;
-  padding: 160px 0 130px 0;
-  font-family: "Raleway";
-}
-
 .theme-inner h1 {
-  color: #74cfae;
   font-size: 80px;
-  font-weight: 700;
-}
-
-.theme-inner p {
-  font-size: 30px;
-  color: #c0c0c0;
-  margin-top: 20px;
-}
-
-.intro {
-  background-color: #74cfae;
-  padding: 50px 0 25px 0;
-  color: white;
-}
-
-.intro p {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 35px;
-}
-
-.intro-inner {
-  width: 100%;
-}
-
-.intro-contents {
-  margin-top: 20px;
-}
-
-.work {
-  padding-top: 60px;
-  padding-bottom: 70px;
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-.work-images {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.work-images img {
-  vertical-align: bottom;
-}
-
-.work-images a:nth-child(4n) {
-  margin-top: 80px;
-}
-
-.work-contents {
-  margin-top: 80px;
-}
-
-.email {
-  display: inline-block;
-  background-color: #74cfae;
-  color: white;
-  font-size: 12px;
-  margin-top: 40px;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-.work {
-  padding-top: 60px;
-  padding-bottom: 70px;
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-.work-images {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.work-images img {
-  width: 100%;
-}
-
-.work-images a:nth-child(4n) {
-  margin-top: 80px;
-}
-
-.work-images a {
-  opacity: 0.7;
-}
-
-.work-contents {
-  margin-top: 80px;
-}
-
-.email {
-  display: inline-block;
-  background-color: #74cfae;
-  color: white;
-  font-size: 12px;
-  margin-top: 40px;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-.skills {
-  background-color: #4e4e4e;
-  color: white;
-  padding-top: 70px;
-  padding-bottom: 100px;
-}
-
-.skill {
-  margin-top: 70px;
-}
-
-.skill-item {
-  margin-top: 88px;
-}
-
-.skill-item:first-child {
-  margin-top: 0;
-}
-
-.skill-item p {
-  font-size: 16px;
-  margin-top: 20px;
 }
 
 .sns {
-  background-color: #f2f2f2;
-  color: #74cfae;
-  font-size: 2em;
   padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sns-link {
-  display: inline-block;
+.sns li,.sns-link {
   width: 100%;
   height: 20%;
-  color: #74cfae;
-  text-decoration: none;
-  padding: 50px 0;
+}
 }
 
-.sns-link:hover {
-  background-color: white;
-}
-
-.footer {
-  background-color: #74cfae;
-  color: white;
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-
-.footer-text {
-  text-align: right;
-}
-
-}
 
